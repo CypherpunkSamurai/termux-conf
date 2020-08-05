@@ -100,3 +100,5 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 export TERM="xterm-256color"
+
+export PATH=$PATH:/data/data/com.termux/files/home/node_modules/.bin
