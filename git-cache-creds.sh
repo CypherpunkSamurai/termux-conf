@@ -1,2 +1,3 @@
 git config --global credential.helper store
-echo Git will save creds.
+git config --global credential.helper 'cache --timeout=600'
+echo Git will save creds
