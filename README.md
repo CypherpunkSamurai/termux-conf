@@ -5,9 +5,7 @@ A Repository Containing My Termux Dotfiles
 ## Install
 
 ```
-wget https://github.com/CypherpunkSamurai/termux-conf/raw/refs/heads/master/termux_setup.sh
-chmod +x termux_setup.sh
-sh termux_setup.sh
+curl https://github.com/CypherpunkSamurai/termux-conf/raw/refs/heads/master/termux_setup.sh | sh
 ```
 
 ## Credits
