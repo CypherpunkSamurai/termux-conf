@@ -1,5 +1,5 @@
 # Update
-pkg update -y && pkg install wget -y
+pkg update -y && pkg install -y wget git
 
 # Install Termux Settings
 mkdir -p ~/.config ~/.termux
@@ -14,7 +14,7 @@ termux-reload-settings
 pkg install -y proot-distro
 
 # Install Neovim
-pkg install -y cmake fish fzf wget lazygit fd ripgrep git
+pkg install -y cmake fish fzf wget lazygit fd ripgrep
 pkg install -y neovim
 
 # git config
@@ -27,3 +27,6 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
+
+# Install Success Complete
+echo Installation Successfully Completed...
