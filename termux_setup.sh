@@ -5,7 +5,7 @@ pkg update -y && pkg install -y wget git
 mkdir -p ~/.config ~/.termux
 echo 'extra-keys = []' >> ~/.termux/termux.properties
 #get font
-wget 'https://github.com/termux/termux-styling/raw/refs/heads/master/app/src/main/assets/fonts/Source-Code-Pro.ttf' ~/.termux/font.ttf
+wget 'https://github.com/termux/termux-styling/raw/refs/heads/master/app/src/main/assets/fonts/Source-Code-Pro.ttf' -O ~/.termux/font.ttf
 # get colors
 wget 'https://github.com/termux/termux-styling/raw/refs/heads/master/app/src/main/assets/colors/ros%C3%A9-pine.properties' -O ~/.termux/colors.properties
 termux-reload-settings
