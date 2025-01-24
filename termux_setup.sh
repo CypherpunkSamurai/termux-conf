@@ -11,11 +11,11 @@ wget 'https://github.com/termux/termux-styling/raw/refs/heads/master/app/src/mai
 termux-reload-settings
 
 # Install Proot Distro
-pkg install proot-distro
+pkg install -y proot-distro
 
 # Install Neovim
-pkg install cmake fish fzf wget lazygit fd ripgrep git
-pkg install neovim
+pkg install -y cmake fish fzf wget lazygit fd ripgrep git
+pkg install -y neovim
 
 # git config
 git config --global credential.helper store
@@ -27,4 +27,3 @@ mv ~/.local/state/nvim{,.bak}
 mv ~/.cache/nvim{,.bak}
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
-
