@@ -3,7 +3,18 @@ pkg update -y && pkg install -y wget git
 
 # Install Termux Settings
 mkdir -p ~/.config ~/.termux
-echo 'extra-keys = []' >> ~/.termux/termux.properties
+echo '
+# Termux Keyboard Config
+extra-keys = []
+
+# Make Termux Dark Mode
+use-black-ui=true
+
+# Make Termux Full Screen
+fullscreen=true
+terminal-margin-vertical=5
+terminal-margin-horizontal=5
+' >~/.termux/termux.properties
 #get font
 wget 'https://github.com/termux/termux-styling/raw/refs/heads/master/app/src/main/assets/fonts/Source-Code-Pro.ttf' -O ~/.termux/font.ttf
 # get colors
