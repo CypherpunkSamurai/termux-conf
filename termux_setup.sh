@@ -1,5 +1,5 @@
 # Update
-pkg update -y && pkg install -y wget git
+pkg update -y && pkg install -y wget which git
 
 # Install Termux Settings
 mkdir -p ~/.config ~/.termux
